@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S05] Ex 2</title>
+</head>
+<body>
+
+    <div class="enunciado">
+        <h1 class="title">Enunciado:</h1>
+        <h3>Adicione um evento ao botão de consultar valor do produto</h3>
+        <span>Adicione um evento de clique para consultar o valor do produto digitado pelo consumidor.<br><br>
+            A resposta deve ser trazida de forma dinâmica a partir de uma função,<br>
+            seja por alert ou alteração do innerText de uma tag de texto presente no html. Exemplo:<br><br>
+
+            alert('O valor do produto é: ')<br>
+            ou<br><br>
+            document.getElementById('preco-produto').innerText = 'O valor do produto é…'        
+        </span>
+      </div>
+
+      <hr>
+    <h1 id="bemvindo">Consulta de Preços</h1>
+    
+    <ul>
+        <li><label for="morango">Morango - Código <b>1</b></label></li>
+        <li><label for="banana">Banana - Código <b>2</b></label></li>
+        <li><label for="abacaxi">Abacaxi - Código <b>3</b></label></li>
+        <li><label for="mamao">Mamão - Código <b>4</b></label></li>
+        <li><label for="sair">Sair - Código <b>0</b></label></li>
+    </ul>
+
+    <input id="input-produto" type="text" placeholder="Digite o código do produto: ">
+    <button onclick="consultarPreco()">Consultar</button>
+    <h4 id="resposta-preco">Preço:</h4>
+
+    <button>Comprar</button>
+
+    <script src="./js/main.js" type="text/javascript"></script>
+    
+</body>
+</html>
