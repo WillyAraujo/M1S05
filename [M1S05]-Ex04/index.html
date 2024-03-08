@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S05] Ex 4</title>
+</head>
+    <body>
+
+        <div class="enunciado">
+            <h1 class="title">Enunciado:</h1>
+            <h3>Adicione um botão para consultar o valor total da compra</h3>
+            <span>Adicione um botão que ao clicar, chame uma função e ela retorne o valor total dos itens no carrinho.<br><br>
+
+                Retornar ‘Carrinho vazio’ caso o valor seja 0.<br><br>
+                
+                Para um melhor cálculo, utilizar um modelo de array de objetos para a lista de compras / carrinho do usuario.<br><br>
+                
+                carrinho = [{nome: ‘Feijão’, preco: 5.99 }, {nome: ‘Arroz’, preco: 23.99}]<br><br>
+                
+                Após isso, basta percorrer em cada item e somar o preço. Ex: soma += preco<br><br>
+            </span>
+        </div>
+
+        <hr>
+        <h1 id="bemvindo">Consulta de Preços</h1>
+        
+        <ul>
+            <li><label for="morango">Morango - Código <b>1</b></label></li>
+            <li><label for="banana">Banana - Código <b>2</b></label></li>
+            <li><label for="abacaxi">Abacaxi - Código <b>3</b></label></li>
+            <li><label for="mamao">Mamão - Código <b>4</b></label></li>
+        </ul>
+
+        <input id="input-produto" type="text" placeholder="Digite o código do produto: ">
+        <button onclick="consultarPreco()">Consultar</button>
+        <h4 id="resposta-preco">Preço:</h4>
+
+        <button onclick="addCarrinho()">Comprar</button>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <script src="./js/main.js" type="text/javascript"></script>
+        
+    </body>
+</html>
